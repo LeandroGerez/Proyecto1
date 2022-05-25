@@ -1,0 +1,11 @@
+.Item{
+    background-color: antiquewhite;
+    text-align: center;
+    color: #a04141;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-radius: 5px;
+}
+p{
+    color: black;
+}
