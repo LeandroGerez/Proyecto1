@@ -16,7 +16,7 @@ src={img} alt='img'
     
     
     <p>{}</p>
-    <button>More details</button>
+    <button className='Boton2'>More details</button>
     </div>
 )
 }
