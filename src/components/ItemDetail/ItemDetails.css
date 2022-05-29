@@ -1,6 +1,4 @@
-.Item{
-    
- justify-content: center; 
+.Camisetas{
     background-color: antiquewhite;
     text-align: center;
     color: #a04141;
@@ -8,6 +6,8 @@
     margin-right: 10rem;
     border-radius: 5px;
 }
-p{
+
+h3{
     color: black;
 }
+

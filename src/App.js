@@ -4,7 +4,8 @@ import CountFunction from './components/CountFunction/CountFunction';
 import NavBar from './components/NavBar/NavBar';
 import CartWidget from './components/CartWidget/CartWidget';
 import ItemCount from './components/ItemCount/ItemCount';
-
+import ItemDetail from './components/ItemDetail/ItemDetail';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <CartWidget/>
         <ItemListContainer greeting ="Bienvenidos a Habemus"/>
         <ItemCount/>
+       <ItemDetailContainer/>
       </header>
     </div>
   );

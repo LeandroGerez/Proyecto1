@@ -9,13 +9,13 @@ return(
 src={img} alt='img'
 
 />
-<h2>{description}</h2>
+<h2>{}</h2>
 
 
-    <p>CATEGORIA: {category}</p>
+    <p>{}</p>
     
     
-    <p>${price}</p>
+    <p>{}</p>
     <button>More details</button>
     </div>
 )
