@@ -1,0 +1,19 @@
+nav{
+    background-color: rgb(163, 149, 149);
+}
+h1 { background-color: antiquewhite;
+    text-align: center;
+    color: #a04141;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-radius: 5px;
+}
+div{
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    
+}
+button{
+    border-radius: 5px;
+}
