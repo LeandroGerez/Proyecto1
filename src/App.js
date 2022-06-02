@@ -13,11 +13,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/*<NavBar />*/}
-        {/*<CartWidget/>*/}
-        {/*<ItemListContainer greeting ="Bienvenidos a Habemus"/>*/}
-        {/*<ItemCount/>*/}
-       {/*<ItemDetailContainer/>*/}
+        
        <BrowserRouter>
        <NavBar />
        <Routes>
