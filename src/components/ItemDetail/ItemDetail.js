@@ -7,6 +7,7 @@ import './ItemDetails.css'
 const ItemDetail = ({title,precio,image,descripcion,stock}) =>{
     const handleOnAdd = (count) =>{
         console.log(count)
+        console.log('Agregado al carrito')
 
     }
     return(
@@ -21,7 +22,7 @@ const ItemDetail = ({title,precio,image,descripcion,stock}) =>{
            <button className='Boton'> COMPRAR </button>
            <footer className='footer'>
                {/*<ItemCount stock={stock}/>*/}
-                <ItemCount stock={stock}/>
+                <ItemCount stock={stock} onConfirm={handleOnAdd}/>
            </footer>
            
         </div>
