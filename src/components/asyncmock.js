@@ -12,7 +12,7 @@ const products = [
         id:'2',
         name: 'Camiseta Suplente',
         price:10000,
-        category:'Camiseta',
+        category:'Camiseta ',
         img:'/images/suplentecasla.png',
         stock:5,
         description: '2da Equipacion. "Nunca Paras de ser cuervo" ',

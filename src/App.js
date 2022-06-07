@@ -9,6 +9,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
          {/*<Route path='/about' element={<h1>About</h1>}/>*/}
          <Route path='/detail/:prodId' element={<ItemDetailContainer/>}/>
        </Routes>
+       
        </BrowserRouter>
       </header>
     </div>
