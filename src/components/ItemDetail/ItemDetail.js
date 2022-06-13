@@ -1,28 +1,34 @@
 import InputCount from '../InputCount/InputCount'
 import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetails.css'
+import { useState, useContext } from 'react'
+import { Link } from 'react-router-dom'
+import CartContext from '../../Context/CartContext'
 
+const ItemDetail = ({id,name,precio,image,descripcion,stock}) =>{
+    const [quantity, setQuantity] = useState(0)
 
+    const {addItem, getProduct} = useContext(CartContext) 
 
-const ItemDetail = ({title,precio,image,descripcion,stock}) =>{
-    const handleOnAdd = (count) =>{
-        console.log(count)
+    const handleOnAdd = (quantity) =>{
         console.log('Agregado al carrito')
-
+        console.log(quantity)
+        setQuantity(quantity)
+       addItem({id, name, precio, quantity,})
     }
     return(
       
         <div className="Camisetas">
             <h1>DETAILS</h1>
-           <h2>{title}</h2>
+           <h2>{name}</h2>
            <img src={image} alt=""/>
            <p>{descripcion}</p>
            <p>Stock: {stock}</p>
            <h3>${precio}</h3>
-           <button className='Boton'> COMPRAR </button>
+           
            <footer className='footer'>
                {/*<ItemCount stock={stock}/>*/}
-                <ItemCount stock={stock} onConfirm={handleOnAdd}/>
+                { quantity > 0 ? <Link to='/cart'>Finalizar orden</Link> : <ItemCount stock={stock} onConfirm={handleOnAdd} initial={getProduct(id)?.quantity}/>}
            </footer>
            
         </div>

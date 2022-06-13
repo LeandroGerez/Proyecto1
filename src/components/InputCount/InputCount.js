@@ -1,6 +1,5 @@
 import { useState } from "react"
 
-
 const InputCount = ({onconfirm,stock,initial=0})=>{
 const [count, setCount] = useState(initial)
 
@@ -12,7 +11,7 @@ const handleChange = (e) => {
 return(
     <div>
         <input type='number' onChange={handleChange} value={count}/>
-        <button onClick={() => onconfirm(count)}>Agregar al Carrito</button>
+        <button className="Boton" onClick={() => onconfirm(count)}>Agregar al Carrito</button>
     </div>
 )
 }
