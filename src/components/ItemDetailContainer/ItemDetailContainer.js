@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
 
     return(
         <div>
-            <Itemdetail title={product?.name} precio={product?.price} image={product?.img} descripcion={product?.description} stock={product?.stock}/>
+            <Itemdetail id={prodId} title={product?.name} precio={product?.price} image={product?.img} descripcion={product?.description} stock={product?.stock}/>
         </div>
     )
 }

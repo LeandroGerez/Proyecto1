@@ -5,7 +5,7 @@ import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import CartContext from '../../Context/CartContext'
 
-const ItemDetail = ({id,name,precio,image,descripcion,stock}) =>{
+const ItemDetail = ({id,title,precio,image,descripcion,stock}) =>{
     const [quantity, setQuantity] = useState(0)
 
     const {addItem, getProduct} = useContext(CartContext) 
@@ -14,13 +14,13 @@ const ItemDetail = ({id,name,precio,image,descripcion,stock}) =>{
         console.log('Agregado al carrito')
         console.log(quantity)
         setQuantity(quantity)
-       addItem({id, name, precio, quantity,})
+       addItem({id, title, precio, quantity,})
     }
     return(
       
         <div className="Camisetas">
             <h1>DETAILS</h1>
-           <h2>{name}</h2>
+           <h2>{title}</h2>
            <img src={image} alt=""/>
            <p>{descripcion}</p>
            <p>Stock: {stock}</p>
