@@ -4,13 +4,14 @@ import CartItem from "../CartItem/CartItem"
 const CartContainer = () => {
     
     
-    const {cart,removeItem} = useContext (CartContext)
+    const {cart,removeItem, totalToPay} = useContext (CartContext)
     return (
         <div>
-            <h1>Cart</h1>
-            {<CartItem cart={cart} remove={removeItem}/>}
+            {<CartItem cart={cart} removeItem={removeItem} totalToPay={totalToPay} />}
+           
         </div>
     )
+   
 }
 
 export default CartContainer

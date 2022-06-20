@@ -7,9 +7,10 @@ const { getQuantity} = useContext(CartContext)
 
 const quantity = getQuantity()
     return (
-        <button to='/cart'><img src="/images/logocart.png"/>
-        { quantity } 
-        </button>
+        <Link to='/cart'>
+         <img src="/images/logocart.png"/>{ quantity }
+         
+        </Link>
     )
 }
  

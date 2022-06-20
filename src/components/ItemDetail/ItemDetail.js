@@ -27,8 +27,7 @@ const ItemDetail = ({id,title,precio,image,descripcion,stock}) =>{
            <h3>${precio}</h3>
            
            <footer className='footer'>
-               {/*<ItemCount stock={stock}/>*/}
-                { quantity > 0 ? <Link to='/cart'>Finalizar orden</Link> : <ItemCount stock={stock} onConfirm={handleOnAdd} initial={getProduct(id)?.quantity}/>}
+               { quantity > 0 ? <Link to='/cart'>Finalizar orden</Link> : <ItemCount stock={stock} onConfirm={handleOnAdd} initial={getProduct(id)?.quantity}/>}
            </footer>
            
         </div>
