@@ -1,11 +1,12 @@
 
 import { useContext } from "react"
-import {useCart} from "../../Context/CartContext"
+import CartContext from "../../Context/CartContext"
 import { useState } from "react"
 import './CartItem.css'
 const CartItem = () => {
     const [loading, setLoading] = useState(false)
-    const {cart, removeItem, totalProductsAdded, totalToPay} = useCart ()
+    const {cart, removeItem, totalProductsAdded, totalToPay} = useContext (CartContext)
+    const totalProducts = totalProductsAdded 
     return (
         
         <div>
@@ -18,7 +19,7 @@ const CartItem = () => {
             <h2> Cantidad: {prod.quantity}</h2>
             <h3> Precio c/u: {prod.precio}</h3>
             <button onClick={()=> removeItem(prod.id)}>X</button>
-             <p> Total:  {totalToPay}  </p>
+            <div> <p> Total:  {totalToPay}  </p> </div>
             </div>
             
             )})
